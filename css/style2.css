@@ -1,0 +1,129 @@
+body {
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Bebas Neue', cursive;
+        font-family: 'Roboto', sans-serif;
+}
+
+.main-container{
+    width: 80%;
+    margin: auto;
+}
+
+.container{
+    position: relative;
+    margin-top: 100px;
+    border: solid red 1px;
+}
+.container img{
+    display: block;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    left:0;
+    right: 0;
+    top: 0;
+    
+    font-family: 'Roboto', sans-serif;
+    background-color: #dbff4a94;
+    height: 100px;
+    z-index: 10;
+    
+}
+
+.brandlogo{
+    float: left;
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+}
+.brandlogo img{
+    display: block;
+    width: 100%;
+    margin-left: 20px;
+    
+}
+.links{
+    float: right;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   
+
+}
+.links li{
+    list-style: none;
+    
+}
+
+.links li a{
+    text-decoration: none;
+    display: block;
+    margin: 0px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+#nav-toggle{
+    position: absolute;
+
+}
+
+nav .icon-burger{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translatey(-50%);
+    display: none ;
+
+}
+
+nav .icon-burger .line{
+    width: 30px;
+    height: 5px;
+    background-color: rgb(0, 0, 36);
+    margin: 5px;
+    border-radius: 3px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 800px){
+    nav .links{
+        display: none;
+    }
+
+    nav .icon-burger{
+        display: block;
+    }
+    .brandlogo img{
+        display: block;
+        width: 300px;
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
