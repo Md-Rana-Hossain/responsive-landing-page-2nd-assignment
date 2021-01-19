@@ -1,80 +1,141 @@
-* {
-    box-sizing: border-box;
-}
 
-.container {
-    width: 80%;
-    margin: auto;
-}
 
 body {
-    margin: 0%;
+    margin: 0;
     padding: 0%;
     font-family: 'Bebas Neue', cursive;
     font-family: 'Roboto', sans-serif;
 }
-/* Navbar Style */
-.navbar {
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #3e3e3e;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Nav Start */
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    margin-top: 1rem;
+    height: 50px;
+    margin: 20px 0px;
 }
 
-.brand-logo {
-    width: 400px;
-    border: red solid 1px;
+.nav-part-1 {
+    float: left;
+    width: 300px;
 }
 
-/* .nav-link{
-    width: 60%;
-} */
-
-.navbar img {
+.nav-part-1 img {
     width: 100%;
 }
 
-.nav-link ul {
-    margin: 0%;
-    padding: 0%;
+.nav-part-2 {
+    float: right;
+}
+
+nav ul {
     display: flex;
+    justify-content: right;
+}
+
+nav li {
+    list-style: none;
+    margin: 0px 30px;
+    color: #3c3c3c;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+button {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: green
+}
+
+button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button span{
+    margin-top: 100px;
+}
+
+.btn-content {
+    margin: 0px 5px;
+}
+
+button img {
+    width: 20px;
+}
+
+.card-footer img {
+    width: 20px;
+}
+
+/* Nav End */
+
+.top-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 400px;
+    border: red solid 1px;
+    align-items: center;
+}
+
+.top-section .part2 img {
+    width: 100%;
+    
+}
+
+.top-section h1 {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+
+
+}
+.part1{
+    padding-right: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 2%;
+    width: 31%;
     border: red solid 1px;
 }
 
-.nav-link li {
-    list-style: none;
-    padding: 15px 30px;
-    display: block;
-    border-radius: 5px;
+.card img {
+    width: 100%;
 }
 
-.nav-link li a {
-    text-decoration: none;
-}
-
-.nav-link li:hover{
-    background-color: #E2F39F;
-}
-/* Navbar Ends */
-
-
-
-/* Media Query */
-@media(max-width:992px){
-    .navbar{
-        flex-direction: column;
-    }
-    .brand-logo {
-        width: 300px;
-    }
-}
-
-@media(max-width:768px){
-    .navbar{
-        flex-direction: column;
-    }
-    .brand-logo {
-        width: 300px;
-    }
+.card-footer h2{
+    font-size: 36px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    color: #FABE4C;
 }

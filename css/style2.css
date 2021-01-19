@@ -24,18 +24,24 @@ nav{
     left:0;
     right: 0;
     top: 0;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
     
     font-family: 'Roboto', sans-serif;
     background-color: #dbff4a94;
     height: 100px;
     z-index: 10;
     
+    
+
+    
 }
 
 .brandlogo{
-    float: left;
-    width: 40%;
-    height: 100%;
+    
+    
+
 
     display: flex;
     align-items: center;
@@ -48,12 +54,12 @@ nav{
     
 }
 .links{
-    float: right;
+    
     display: flex;
     justify-content:space-around;
     align-items: center;
-    width: 60%;
-    height: 100%;
+    
+    
     margin: 0;
     padding: 0;
    
@@ -67,9 +73,9 @@ nav{
 .links li a{
     text-decoration: none;
     display: block;
-    margin: 0px 30px;
+    margin: 0px 20px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight:500;
     
 }
 #nav-toggle{
@@ -96,8 +102,8 @@ nav .icon-burger .line{
 
 /* Media Query */
 
-@media screen and (max-width: 800px){
-    nav .links{
+@media (max-width: 850px){
+    li{
         display: none;
     }
 
@@ -108,6 +114,11 @@ nav .icon-burger .line{
         display: block;
         width: 300px;
         
+        
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
         
     }
 }
